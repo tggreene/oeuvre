@@ -1,3 +1,8 @@
+## 0.5.4 (2022-03-27)
+
+- Add `singular?`, `multiple?` and `toggle-join`
+- Use deps.edn for ease of use as git dep
+
 ## 0.5.3 (2021-01-04)
 
 [API Docs](https://cljdoc.org/d/metosin/potpuri/0.5.2) - [compare](https://github.com/metosin/potpuri/compare/0.5.2...0.5.3)

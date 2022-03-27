@@ -1,13 +1,13 @@
-# potpuri [![Build Status](https://travis-ci.org/metosin/potpuri.svg?branch=master)](https://travis-ci.org/metosin/potpuri) [![cljdoc badge](https://cljdoc.org/badge/metosin/potpuri)](https://cljdoc.org/jump/release/metosin/potpuri)
+# oeuvre
 
-[![Clojars Project](http://clojars.org/metosin/potpuri/latest-version.svg)](http://clojars.org/metosin/potpuri)
+Some useful stuff to complement clojure.core.
 
-Common stuff missing from the clojure.core.
+Using this means you might be liable to suffer from some possibly dodgy ideas I
+deem to be good, be warned!
 
+Ripped off shamelessly from [potpuri](https://github.com/metosin/potpuri)
 Inspired by [Medley](https://github.com/weavejester/medley).
 
 ## License
-
-Copyright © 2014-2020 [Metosin Oy](http://www.metosin.fi)
 
 Distributed under the Eclipse Public License 2.0.

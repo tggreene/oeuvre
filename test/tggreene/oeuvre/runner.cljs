@@ -1,14 +1,14 @@
-(ns potpuri.runner
+(ns tggreene.oeuvre.runner
   (:require [cljs.test :as test]
             [cljs.nodejs :as nodejs]
-            potpuri.core-test))
+            tggreene.oeuvre.core-test))
 
 (nodejs/enable-util-print!)
 
 (def status (atom nil))
 
 (defn -main []
-  (test/run-all-tests #"^potpuri.*-test$")
+  (test/run-all-tests #"^tggreene.oeuvre.*-test$")
   (js/process.exit @status))
 
 (defmethod test/report [:cljs.test/default :end-run-tests] [m]

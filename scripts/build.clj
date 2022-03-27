@@ -4,7 +4,7 @@
   ; Includes :source-paths and :test-paths already
   "test"
   {:output-to "target/generated/js/out/tests.js"
-   :main "potpuri.runner"
+   :main "tggreene.oeuvre.runner"
    :source-map true
    :output-dir "target/generated/js/out"
    :optimizations :none

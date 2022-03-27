@@ -1,5 +1,5 @@
-(ns potpuri.core
-  #?(:cljs (:require-macros potpuri.core)))
+(ns tggreene.oeuvre
+  #?(:cljs (:require-macros tggreene.oeuvre)))
 
 (defmacro fn->
   "Creates a function that threads on input with `some->`"
@@ -434,3 +434,20 @@
   (if (contains? m k)
     (apply update (conj rest k m))
     m))
+
+(defn singular?
+  "Determine if a collection contains a single element"
+  [c]
+  (= (count c) 1))
+
+(defn multiple?
+  "Determine if a collection contains more than one element"
+  [c]
+  (< 1 (count c)))
+
+(defn toggle-join
+  "Toggles an elements presence within a set"
+  [set x]
+  (if (contains? set x)
+    (disj set x)
+    (conj set x)))

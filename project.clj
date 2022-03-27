@@ -1,23 +1,18 @@
-(defproject metosin/potpuri "0.5.3"
-  :description "Common stuff missing from the clojure.core."
-  :url "https://github.com/metosin/potpuri"
+(defproject tggreene/oeuvre "0.5.4"
+  :description "Some useful stuff to complement clojure.core"
+  :url "https://github.com/tggreene/oeuvre"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"
             :distribution :repo
             :comments "same as Clojure"}
   :dependencies []
-  :plugins [[lein-codox "0.10.7"]
-            [metosin/bat-test "0.4.4"]]
+  :plugins [[metosin/bat-test "0.4.4"]]
 
   :bat-test {:report [:pretty
                       {:type :junit :output-to "target/junit.xml"}]}
 
   :source-paths ["src" "target/generated/src"]
   :test-paths ["test" "target/generated/test"]
-
-  :codox {:output-path "doc"
-          :source-uri "https://github.com/metosin/potpuri/blob/{version}/{filepath}#L{line}"
-          :metadata {:doc/format :markdown}}
 
   :profiles {:dev {:plugins [[jonase/eastwood "0.3.12"]]
                    :dependencies [[org.clojure/clojure "1.9.0"]
