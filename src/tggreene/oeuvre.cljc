@@ -1,5 +1,6 @@
 (ns tggreene.oeuvre
-  #?(:cljs (:require-macros tggreene.oeuvre)))
+  #?@(:org.babashka/nbb []
+      :cljs [(:require-macros tggreene.oeuvre)]))
 
 (defmacro fn->
   "Creates a function that threads on input with `some->`"
@@ -278,7 +279,9 @@
 ;; These are like ones in medley
 
 (defn- editable? [coll]
-  #?(:clj  (instance? clojure.lang.IEditableCollection coll)
+  ;; We don't have a good answer for this yet
+  #?(:org.babashka/nbb false
+     :clj  (instance? clojure.lang.IEditableCollection coll)
      :cljs (satisfies? cljs.core.IEditableCollection coll)))
 
 (defn- reduce-map [f coll]
